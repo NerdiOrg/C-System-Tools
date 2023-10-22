@@ -7,7 +7,7 @@
 
 int main() {
     // Welcome message
-    std::cout << "WAP C++ Hack Tools (Alpha v0.0.4)" << std::endl << "===================" << std::endl;
+    std::cout << "WAP C++ System Tools (Alpha v0.0.4)" << std::endl << "===================" << std::endl;
 
     randomSeed(); // call random seed to initiate random number generator
 
