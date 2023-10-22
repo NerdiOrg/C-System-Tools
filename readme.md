@@ -2,7 +2,20 @@
 
 Learning how to access directories, return file & folder lists, read files, save files, run sub-programs, use C++ headers, etc.
 
+Command Line Menu: 
 
+1. Save file to C://wap.md
+2. Read C://wap.md file
+3. System Users
+     1. View User Folders
+     2. Get Current Username
+     3. Get Current User Directory Path
+4. Pictures
+     1. List all files in user Pictures folder.
+     2. Delete all files in user Pictures folder, recursively.
+5. Confusing Filenames
+     1. All Desktop Files
+     2. All Desktop Files, Subfolders (Recursive)
 
 ## Compile the Resource Script
 
