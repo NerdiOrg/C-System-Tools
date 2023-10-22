@@ -1,6 +1,6 @@
 # WAP C++ System Tools
 
-Learning how to access directories, return file & folder lists, read files, save files, run sub-programs, use C++ headers, etc.
+A collection of mini features to help me better understand std:: , Windows, and C++ development. If this is useful to others, that's great, but I am only releasing this software for educational purposes as I teach myself C++.
 
 Command Line Menu: 
 
