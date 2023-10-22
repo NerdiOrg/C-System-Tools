@@ -33,8 +33,4 @@ The version of gcc must be 8+ to use filesystem dependencies. I am using 'gcc.ex
 
 # Notes
 
-Alpha 0.0.5 will include a sub-program for developers that copies project files/folders and adds to the dist folder under 'source' for proper version history.
-
-Alpha 0.0.4 has a critical upgrade to use a while(true) loop for the main menu & all sub-menus, to allow continuous use of the program. Up until now the program has quit after 1 option is completed. Unfortunately during this process, alpha 0.0.3b was overwritten by 0.0.4's first distribution release locally.
-
-Alpha 0.0.3b and 0.0.3c introduce new formats for sub-prompt questions to combine options (from main menu), all \n usage is replaced with std::endl, and the random seed is generated at start instead of inside the random function itself which was causing the same random string to be provided each time.
+Run start.exe from distribution folders in /dist/, or compile from source manually with commands above, or using dev/Packager/Packager.exe. Source is provided for both starter & packager programs alongside main source for WAP C++ System Tools.
