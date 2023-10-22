@@ -28,6 +28,11 @@ The start.exe is built from starter.cpp file in root folder.
 The program has options that will create, read, edit, or delete files and folders. No operation is designed to be malicious, but using the program can cause data loss. This is my attempt at learning cool C++ functionality from command line prompts and as such, some test folders are used instead at this time, to prevent deletion of actual system files.
 
 
+## Compile with CMake
+
+The CMakeLists.txt file has instructions for 'pkg/run.exe' (program itself, which only works fully with Admin permissions) and 'start.exe' which triggers the opening of pkg/run.exe with 'runas' admin permission request.
+
+
 ## Compile the Resource Script
 
 Run the following command from project root dir to compile the resource script into a COFF object file:
