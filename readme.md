@@ -1,4 +1,4 @@
-# WAP C++ System Tools
+# WAP C++ System Tools - Alpha 0.0.5 Coming Soon
 
 A collection of mini features to help me better understand std:: , Windows, and C++ development. If this is useful to others, that's great, but I am only releasing this software for educational purposes as I teach myself C++.
 
