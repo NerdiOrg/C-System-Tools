@@ -32,6 +32,8 @@ The program has options that will create, read, edit, or delete files and folder
 
 The CMakeLists.txt file has instructions for 'pkg/run.exe' (program itself, which only works fully with Admin permissions) and 'start.exe' which triggers the opening of pkg/run.exe with 'runas' admin permission request.
 
+*NOTE: This current release's CMakeLists file does not use the res object, so the program has no manifest or logo/icon attached. 
+
 
 ## Compile the Resource Script
 
