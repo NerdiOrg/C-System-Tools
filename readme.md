@@ -45,7 +45,7 @@ windres config/sysAccess.rc -O coff -o config/sysAccess.res
 
 
 
-# Compile the program:
+## Compile pkg/run.exe (main program)
 
 g++ -std=c++17 main.cpp lib/FolderScanner/main.cpp lib/Random/main.cpp lib/SystemUser/main.cpp config/sysAccess.res -o dist/alpha-0.0.4/pkg/run.exe
 
@@ -55,7 +55,7 @@ The version of gcc must be 8+ to use filesystem dependencies. I am using 'gcc.ex
 
 
 
-## Create a starter executable:
+## Compile start.exe
 
 This only needs to be done once. This will automatically request admin permissions for the run.exe, to support all operations.
 
@@ -65,7 +65,7 @@ g++ starter.cpp -o dist/alpha-0.0.1/start.exe
 
 
 
-## Compile the Packager:
+## Compile dev/Packager/Packager.exe
 
 This is only here for an example of a C++ executable that allows distributions of WAP C++ System Tools to be easily packaged into a new version. It is not needed if you are using manual commands above.
 
