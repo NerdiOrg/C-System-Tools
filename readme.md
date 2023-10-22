@@ -17,6 +17,17 @@ Command Line Menu:
      1. All Desktop Files
      2. All Desktop Files, Subfolders (Recursive)
 
+
+## Release Executables
+Clicking start.exe will launch a prompt to request administrator permissions for pkg/run.exe
+
+The run.exe is built from the primary main.cpp file in root folder.
+
+The start.exe is built from starter.cpp file in root folder.
+
+The program has options that will create, read, edit, or delete files and folders. No operation is designed to be malicious, but using the program can cause data loss. This is my attempt at learning cool C++ functionality from command line prompts and as such, some test folders are used instead at this time, to prevent deletion of actual system files.
+
+
 ## Compile the Resource Script
 
 Run the following command from project root dir to compile the resource script into a COFF object file:
