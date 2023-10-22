@@ -7,7 +7,7 @@
 
 int main() {
     // Welcome message
-    std::cout << "WAP C++ Hacker Tools Packager" << std::endl << "===================" << std::endl;
+    std::cout << "WAP C++ System Tools Dist Packager" << std::endl << "===================" << std::endl;
 
     while(true){
         std::cout << std::endl << "Type in a version number. Please note that this will overwrite all files/folders if a previous distribution exists." << std::endl << "Your files will be compiled in /dist/0.0.*/ folder, where the sub-folder of /dist is your version number input." << std::endl;
