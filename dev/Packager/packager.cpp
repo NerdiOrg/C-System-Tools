@@ -63,11 +63,11 @@ int main() {
         system(command_createResObj.c_str());
 
         std::string command_compileMain = "g++ -std=c++17 ../../main.cpp ../../lib/FolderScanner/main.cpp ../../lib/Random/main.cpp ../../lib/SystemUser/main.cpp ../../config/sysAccess.res -o " + distPath + "pkg/run.exe";
-        std::cout << "Compiling WAP C++ Hacker Tools (pkg/run.exe)" << std::endl;
+        std::cout << "Compiling WAP C++ System Tools (pkg/run.exe)" << std::endl;
         system(command_compileMain.c_str());
 
         std::string command_createStarter = "g++ ../../starter.cpp -o " + distPath + "start.exe";
-        std::cout << "Compiling WAP C++ Hacker Tools Starter (start.exe)" << std::endl;
+        std::cout << "Compiling WAP C++ System Tools Starter (start.exe)" << std::endl;
         system(command_createStarter.c_str());
 
         std::string command_moveReadme = "move ../../readme.md.template " + distPath + "readme.md";
