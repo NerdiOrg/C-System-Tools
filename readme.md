@@ -16,6 +16,7 @@ Command Line Menu:
 5. Confusing Filenames
      1. All Desktop Files
      2. All Desktop Files, Subfolders (Recursive)
+6. Disable Wi-Fi
 
 
 ## Release Executables
@@ -31,6 +32,11 @@ The program has options that will create, read, edit, or delete files and folder
 ## Compile with CMake
 
 The CMakeLists.txt file has instructions for 'pkg/run.exe' (program itself, which only works fully with Admin permissions) and 'start.exe' which triggers the opening of pkg/run.exe with 'runas' admin permission request.
+
+- Navigate to /build/
+- run command: cmake ..
+- run command: cmake --build .
+- not needed: mingw32-make
 
 *NOTE: This current release's CMakeLists file does not use the res object, so the program has no manifest or logo/icon attached. 
 
@@ -48,6 +54,8 @@ windres config/sysAccess.rc -O coff -o config/sysAccess.res
 ## Compile pkg/run.exe (main program)
 
 g++ -std=c++17 main.cpp lib/FolderScanner/main.cpp lib/Random/main.cpp lib/SystemUser/main.cpp config/sysAccess.res -o dist/alpha-0.0.4/pkg/run.exe
+
+g++ -std=c++17 main.cpp lib/FolderScanner/main.cpp lib/Random/main.cpp lib/SystemUser/main.cpp config/sysAccess.res -o dist/0.0.5/pkg/run.exe
 
 The version of gcc must be 8+ to use filesystem dependencies. I am using 'gcc.exe (x86_64-posix-seh-rev0, Built by MinGW-Builds project) 13.2.0' at this time.
 

@@ -5,6 +5,9 @@
 #include "lib/Random/main.h"
 #include "lib/SystemUser/main.h"
 
+#include <cstdlib>
+
+
 int main() {
     // Welcome message
     std::cout << "WAP C++ System Tools (Alpha v0.0.4)" << std::endl << "===================" << std::endl;
@@ -12,7 +15,7 @@ int main() {
     randomSeed(); // call random seed to initiate random number generator
 
     while(true){
-        std::cout << std::endl << "What would you like to do?"  << std::endl << "1. Save in C:/"  << std::endl << "2. Read file in C:/" << std::endl << "3. System Users"  << std::endl <<  "4. Pictures"  << std::endl <<  "5. Confusing Filenames"  << std::endl << "6. Exit" << std::endl << "Type # [1-6] and press Enter to continue..." << std::endl;
+        std::cout << std::endl << "What would you like to do?"  << std::endl << "1. Save in C:/"  << std::endl << "2. Read file in C:/" << std::endl << "3. System Users"  << std::endl <<  "4. Pictures"  << std::endl <<  "5. Confusing Filenames"  << std::endl << "6. Disable Wi-Fi" << std::endl << "7. Exit" << std::endl << "Type # [1-7] and press Enter to continue..." << std::endl;
         std::string mainPromptAnswer; // Used for a prompt
         std::getline(std::cin, mainPromptAnswer);
 
@@ -146,6 +149,9 @@ int main() {
                 }
             }
         } else if(mainPromptAnswer == "6"){
+            std::cout << "===================" << std::endl << "Disable Wireless Network" << std::endl;
+            system("netsh interface set interface \"Wi-Fi\" admin=disable");
+        } else if(mainPromptAnswer == "7"){
             std::cout << std::endl << std::endl << "===================" << std::endl << "===================" << std::endl <<  "Shutdown Initiated - Copy any logs as-needed, or Press Enter to exit...";
             std::cin.get();  // Wait for user to press Enter
             break;  // Exit the program

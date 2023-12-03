@@ -12,6 +12,8 @@ target_include_directories(SystemUser PUBLIC lib/SystemUser) # Include directori
 add_library(Random STATIC lib/Random/main.cpp) # Define a static library
 target_include_directories(Random PUBLIC lib/Random) # Include directories for the library
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
+
 add_executable(run main.cpp)
 
 # Link the library with the executable
