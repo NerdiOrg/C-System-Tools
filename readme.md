@@ -16,7 +16,9 @@ Command Line Menu:
 5. Confusing Filenames
      1. All Desktop Files
      2. All Desktop Files, Subfolders (Recursive)
-6. Disable Wi-Fi
+6. Wireless Networking
+     1. Disable Wi-Fi
+     2. Enable Wi-Fi
 
 
 ## Release Executables
